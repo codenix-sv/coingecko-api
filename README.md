@@ -1,5 +1,7 @@
 # PHP API client for coingecko.com
 
+![image info](./CoinGeckoLogo.png)
+
 A simple API client, written with PHP for [coingecko.com](https://coingecko.com).
 
 CoinGecko provides a fundamental analysis of the crypto market. In addition to tracking price, volume and market capitalization, CoinGecko tracks community growth, open-source code development, major events and on-chain metrics.
