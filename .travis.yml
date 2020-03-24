@@ -1,0 +1,37 @@
+language: php
+
+php:
+  - '7.2'
+  - '7.3'
+  - '7.4'
+
+sudo: false
+
+cache:
+  directories:
+    - $HOME/.composer/cache
+
+install:
+  - travis_retry composer self-update && composer --version
+  - travis_retry composer update --dev --prefer-dist --no-interaction
+
+before_script:
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - chmod +x ./cc-test-reporter
+  - ./cc-test-reporter before-build
+
+script:
+  - composer validate --strict
+  - vendor/bin/phpunit
+
+after_script:
+  - if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT; fi
+  - wget https://scrutinizer-ci.com/ocular.phar
+  - php ocular.phar code-coverage:upload --format=php-clover ./build/logs/clover.xml
+
+notifications:
+  email:
+    recipients:
+      - codenix.sv@gmail.com
+    on_success: never
+    on_failure: always
