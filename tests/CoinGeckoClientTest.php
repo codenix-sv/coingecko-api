@@ -18,6 +18,7 @@ use Codenixsv\CoinGeckoApi\Api\StatusUpdates;
 use Codenixsv\CoinGeckoApi\CoinGeckoClient;
 use GuzzleHttp\Client;
 use PHPUnit\Framework\TestCase;
+use Psr\Http\Message\ResponseInterface;
 
 class CoinGeckoClientTest extends TestCase
 {
@@ -110,5 +111,21 @@ class CoinGeckoClientTest extends TestCase
         $client = new CoinGeckoClient();
 
         $this->assertInstanceOf(Globals::class, $client->globals());
+    }
+
+    public function testGetLastResponseIsNull()
+    {
+        $client = new CoinGeckoClient();
+
+        $this->assertNull($client->getLastResponse());
+    }
+
+    public function testSetLastResponse()
+    {
+        $client = new CoinGeckoClient();
+        $response = $this->createMock(ResponseInterface::class);
+        $client->setLastResponse($response);
+
+        $this->assertInstanceOf(ResponseInterface::class, $client->getLastResponse());
     }
 }

@@ -18,6 +18,7 @@ use Codenixsv\CoinGeckoApi\Api\Simple;
 use Codenixsv\CoinGeckoApi\Api\StatusUpdates;
 use Exception;
 use GuzzleHttp\Client;
+use Psr\Http\Message\ResponseInterface;
 
 /**
  * Class CoinGeckoClient
@@ -29,6 +30,9 @@ class CoinGeckoClient
 
     /** @var Client */
     private $httpClient;
+
+    /** @var ResponseInterface|null */
+    protected $lastResponse;
 
     public function __construct(?Client $client = null)
     {
@@ -102,5 +106,15 @@ class CoinGeckoClient
     public function globals(): Globals
     {
         return new Globals($this);
+    }
+
+    public function setLastResponse(ResponseInterface $response)
+    {
+        return $this->lastResponse = $response;
+    }
+
+    public function getLastResponse(): ?ResponseInterface
+    {
+        return $this->lastResponse;
     }
 }

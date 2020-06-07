@@ -34,6 +34,7 @@ class Api
     {
         $response = $this->client->getHttpClient()->request('GET', '/api/' . $this->version
             . $uri, ['query' => $query]);
+        $this->client->setLastResponse($response);
 
         return $this->transformer->transform($response);
     }
