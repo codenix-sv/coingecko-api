@@ -41,9 +41,19 @@ or add
 use Codenixsv\CoinGeckoApi\CoinGeckoClient;
 
 $client = new CoinGeckoClient();
-
 $data = $client->ping();
 ```
+
+You can get last response (`ResponseInterface::class`) uses `getLastResponse` method:
+```php
+use Codenixsv\CoinGeckoApi\CoinGeckoClient;
+
+$client = new CoinGeckoClient();
+$data = $client->derivatives()->getExchanges();
+$response = $client->getLastResponse();
+$headers = $response->getHeaders();
+```
+
 ## Available methods
 
 ### Ping
