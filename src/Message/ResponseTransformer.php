@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Codenixsv\CoinGeckoApi\Message;
 
-use Codenixsv\CoinGeckoApi\Exception\TransformResponseException;
+use Codenixsv\CoinGeckoApi\Exceptions\TransformResponseException;
 use Psr\Http\Message\ResponseInterface;
 use Exception;
 

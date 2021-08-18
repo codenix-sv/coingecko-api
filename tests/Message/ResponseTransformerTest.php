@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Codenixsv\CoinGeckoApi\Tests\Message;
 
-use Codenixsv\CoinGeckoApi\Exception\TransformResponseException;
+use Codenixsv\CoinGeckoApi\Exceptions\TransformResponseException;
 use Codenixsv\CoinGeckoApi\Message\ResponseTransformer;
 use GuzzleHttp\Psr7\Response;
 use PHPUnit\Framework\TestCase;
