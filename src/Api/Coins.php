@@ -69,10 +69,11 @@ class Coins extends Api
      * @param string $id
      * @param string $vsCurrency
      * @param string $days
+     * @param array $params
      * @return array
      * @throws Exception
      */
-    public function getMarketChart(string $id, string $vsCurrency, string $days): array
+    public function getMarketChart(string $id, string $vsCurrency, string $days, array $params = []): array
     {
         $params['vs_currency'] = $vsCurrency;
         $params['days'] = $days;
