@@ -12,9 +12,9 @@ class Coins extends Api
      * @return array
      * @throws Exception
      */
-    public function getList(): array
+    public function getList(array $params = []): array
     {
-        return $this->get('/coins/list');
+        return $this->get('/coins/list', $params);
     }
 
     /**
