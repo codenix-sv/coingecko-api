@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Lborv\CoinGeckoApi\Exceptions;
+namespace Codenixsv\CoinGeckoApi\Exceptions;
 
 use Exception;
 
 /**
  * Class TransformResponseException
- * @package Lborv\CoinGeckoApi\Exception
+ * @package Codenixsv\CoinGeckoApi\Exception
  */
 class TransformResponseException extends Exception
 {

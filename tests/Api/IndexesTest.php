@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Lborv\CoinGeckoApi\Tests\Api;
+namespace Codenixsv\CoinGeckoApi\Tests\Api;
 
-use Lborv\CoinGeckoApi\Api\Indexes;
-use Lborv\CoinGeckoApi\CoinGeckoClient;
+use Codenixsv\CoinGeckoApi\Api\Indexes;
+use Codenixsv\CoinGeckoApi\CoinGeckoClient;
 
 class IndexesTest extends ApiTestCase
 {

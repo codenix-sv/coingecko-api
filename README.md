@@ -38,7 +38,7 @@ or add
 
 ### Example
 ```php
-use Lborv\CoinGeckoApi\CoinGeckoClient;
+use Codenixsv\CoinGeckoApi\CoinGeckoClient;
 
 $client = new CoinGeckoClient();
 $data = $client->ping();
@@ -46,7 +46,7 @@ $data = $client->ping();
 
 You can get last response (`ResponseInterface::class`) uses `getLastResponse` method:
 ```php
-use Lborv\CoinGeckoApi\CoinGeckoClient;
+use Codenixsv\CoinGeckoApi\CoinGeckoClient;
 
 $client = new CoinGeckoClient();
 $data = $client->derivatives()->getExchanges();
@@ -56,7 +56,7 @@ $headers = $response->getHeaders();
 
 ## Using PRO Plan
 ```php
-    use Lborv\CoinGeckoApi\CoinGeckoClient;
+    use Codenixsv\CoinGeckoApi\CoinGeckoClient;
 
     $client = new CoinGeckoClient(null, 'YOUR API KEY');
     $data = $client->ping();

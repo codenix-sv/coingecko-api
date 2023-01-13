@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Lborv\CoinGeckoApi\Api;
+namespace Codenixsv\CoinGeckoApi\Api;
 
 use Exception;
 

@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Lborv\CoinGeckoApi\Tests\Api;
+namespace Codenixsv\CoinGeckoApi\Tests\Api;
 
-use Lborv\CoinGeckoApi\Api\Exchanges;
-use Lborv\CoinGeckoApi\CoinGeckoClient;
+use Codenixsv\CoinGeckoApi\Api\Exchanges;
+use Codenixsv\CoinGeckoApi\CoinGeckoClient;
 
 class ExchangesTest extends ApiTestCase
 {

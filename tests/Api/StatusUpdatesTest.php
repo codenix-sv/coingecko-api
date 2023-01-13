@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Lborv\CoinGeckoApi\Tests\Api;
+namespace Codenixsv\CoinGeckoApi\Tests\Api;
 
-use Lborv\CoinGeckoApi\Api\StatusUpdates;
-use Lborv\CoinGeckoApi\CoinGeckoClient;
+use Codenixsv\CoinGeckoApi\Api\StatusUpdates;
+use Codenixsv\CoinGeckoApi\CoinGeckoClient;
 
 class StatusUpdatesTest extends ApiTestCase
 {

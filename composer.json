@@ -25,10 +25,10 @@
         "phpunit/phpunit": "^8.0"
     },
     "autoload": {
-        "psr-4": { "Lborv\\CoinGeckoApi\\": "src/" }
+        "psr-4": { "Codenixsv\\CoinGeckoApi\\": "src/" }
     },
     "autoload-dev": {
-        "psr-4": { "Lborv\\CoinGeckoApi\\Tests\\": "tests/"}
+        "psr-4": { "Codenixsv\\CoinGeckoApi\\Tests\\": "tests/"}
     },
     "prefer-stable": true
 }
