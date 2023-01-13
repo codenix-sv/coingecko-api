@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Codenixsv\CoinGeckoApi\Tests\Api;
+namespace Lborv\CoinGeckoApi\Tests\Api;
 
-use Codenixsv\CoinGeckoApi\Api\Events;
-use Codenixsv\CoinGeckoApi\CoinGeckoClient;
+use Lborv\CoinGeckoApi\Api\Events;
+use Lborv\CoinGeckoApi\CoinGeckoClient;
 
 class EventsTest extends ApiTestCase
 {

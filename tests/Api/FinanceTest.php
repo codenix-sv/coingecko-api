@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Codenixsv\CoinGeckoApi\Tests\Api;
+namespace Lborv\CoinGeckoApi\Tests\Api;
 
-use Codenixsv\CoinGeckoApi\Api\Finance;
-use Codenixsv\CoinGeckoApi\CoinGeckoClient;
+use Lborv\CoinGeckoApi\Api\Finance;
+use Lborv\CoinGeckoApi\CoinGeckoClient;
 
 class FinanceTest extends ApiTestCase
 {

@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Codenixsv\CoinGeckoApi\Message;
+namespace Lborv\CoinGeckoApi\Message;
 
-use Codenixsv\CoinGeckoApi\Exceptions\TransformResponseException;
+use Lborv\CoinGeckoApi\Exceptions\TransformResponseException;
 use Psr\Http\Message\ResponseInterface;
 use Exception;
 
 /**
  * Class ResponseTransformer
- * @package Codenixsv\CoinGeckoApi\Message
+ * @package Lborv\CoinGeckoApi\Message
  */
 class ResponseTransformer
 {

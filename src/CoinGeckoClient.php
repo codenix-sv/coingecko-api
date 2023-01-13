@@ -2,27 +2,27 @@
 
 declare(strict_types=1);
 
-namespace Codenixsv\CoinGeckoApi;
+namespace Lborv\CoinGeckoApi;
 
-use Codenixsv\CoinGeckoApi\Api\Coins;
-use Codenixsv\CoinGeckoApi\Api\Contract;
-use Codenixsv\CoinGeckoApi\Api\Derivatives;
-use Codenixsv\CoinGeckoApi\Api\Events;
-use Codenixsv\CoinGeckoApi\Api\ExchangeRates;
-use Codenixsv\CoinGeckoApi\Api\Exchanges;
-use Codenixsv\CoinGeckoApi\Api\Finance;
-use Codenixsv\CoinGeckoApi\Api\Globals;
-use Codenixsv\CoinGeckoApi\Api\Indexes;
-use Codenixsv\CoinGeckoApi\Api\Ping;
-use Codenixsv\CoinGeckoApi\Api\Simple;
-use Codenixsv\CoinGeckoApi\Api\StatusUpdates;
+use Lborv\CoinGeckoApi\Api\Coins;
+use Lborv\CoinGeckoApi\Api\Contract;
+use Lborv\CoinGeckoApi\Api\Derivatives;
+use Lborv\CoinGeckoApi\Api\Events;
+use Lborv\CoinGeckoApi\Api\ExchangeRates;
+use Lborv\CoinGeckoApi\Api\Exchanges;
+use Lborv\CoinGeckoApi\Api\Finance;
+use Lborv\CoinGeckoApi\Api\Globals;
+use Lborv\CoinGeckoApi\Api\Indexes;
+use Lborv\CoinGeckoApi\Api\Ping;
+use Lborv\CoinGeckoApi\Api\Simple;
+use Lborv\CoinGeckoApi\Api\StatusUpdates;
 use Exception;
 use GuzzleHttp\Client;
 use Psr\Http\Message\ResponseInterface;
 
 /**
  * Class CoinGeckoClient
- * @package Codenixsv\CoinGeckoApi
+ * @package Lborv\CoinGeckoApi
  */
 class CoinGeckoClient
 {

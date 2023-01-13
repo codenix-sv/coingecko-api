@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Codenixsv\CoinGeckoApi\Tests\Api;
+namespace Lborv\CoinGeckoApi\Tests\Api;
 
-use Codenixsv\CoinGeckoApi\Api\Coins;
-use Codenixsv\CoinGeckoApi\CoinGeckoClient;
+use Lborv\CoinGeckoApi\Api\Coins;
+use Lborv\CoinGeckoApi\CoinGeckoClient;
 
 class ProPlanTest extends ApiTestCase
 {
@@ -33,7 +33,7 @@ class ProPlanTest extends ApiTestCase
             $request->getUri()->__toString()
         );
     }
-    
+
     private function createApi(): Coins
     {
         return new Coins($this->createClient());

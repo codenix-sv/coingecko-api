@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Codenixsv\CoinGeckoApi\Tests\Api;
+namespace Lborv\CoinGeckoApi\Tests\Api;
 
-use Codenixsv\CoinGeckoApi\Api\Globals;
-use Codenixsv\CoinGeckoApi\CoinGeckoClient;
+use Lborv\CoinGeckoApi\Api\Globals;
+use Lborv\CoinGeckoApi\CoinGeckoClient;
 
 class GlobalsTest extends ApiTestCase
 {
