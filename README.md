@@ -54,6 +54,14 @@ $response = $client->getLastResponse();
 $headers = $response->getHeaders();
 ```
 
+## Using PRO Plan
+```php
+    use Codenixsv\CoinGeckoApi\CoinGeckoClient;
+
+    $client = new CoinGeckoClient(null, 'YOUR API KEY');
+    $data = $client->ping();
+```
+
 ## Available methods
 
 ### Ping

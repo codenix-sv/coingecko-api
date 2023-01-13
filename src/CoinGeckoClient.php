@@ -27,16 +27,33 @@ use Psr\Http\Message\ResponseInterface;
 class CoinGeckoClient
 {
     protected const BASE_URI = 'https://api.coingecko.com';
+    protected const BASE_URI_PRO_PLAN = 'https://pro-api.coingecko.com';
 
     /** @var Client */
     private $httpClient;
 
+    /** @var null|string */
+    private $apiKey = null;
+
     /** @var ResponseInterface|null */
     protected $lastResponse;
 
-    public function __construct(?Client $client = null)
+    public function __construct(?Client $client = null, ?string $apiKey = null)
     {
-        $this->httpClient = $client ?: new Client(['base_uri' => self::BASE_URI]);
+        if(!empty($apiKey)) {
+            $this->setApiKey($apiKey);
+        }
+
+        $this->httpClient = $client ?: new Client(['base_uri' => $apiKey ? self::BASE_URI_PRO_PLAN : self::BASE_URI]);
+    }
+
+    public function setApiKey(string $key)
+    {
+        $this->apiKey = $key;
+    }
+
+    public function getApiKey(): ?string {
+        return $this->apiKey;
     }
 
     public function getHttpClient(): Client
