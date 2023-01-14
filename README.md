@@ -26,13 +26,16 @@ The preferred way to install this extension is through [composer](http://getcomp
 
 Either run
 
-```bash
-$ composer require codenix-sv/coingecko-api
-```
-or add
-
+Add in repositories section
 ```json
-"codenix-sv/coingecko-api": "^1.0"
+{
+    "type": "vcs",
+    "url": "https://github.com/LborV/coingecko-api"
+}
+```
+And in require section
+```json
+"codenix-sv/coingecko-api": "dev-pro-plan"
 ```
 ## Basic usage
 
@@ -52,6 +55,14 @@ $client = new CoinGeckoClient();
 $data = $client->derivatives()->getExchanges();
 $response = $client->getLastResponse();
 $headers = $response->getHeaders();
+```
+
+## Using PRO Plan
+```php
+    use Codenixsv\CoinGeckoApi\CoinGeckoClient;
+
+    $client = new CoinGeckoClient(null, 'YOUR API KEY');
+    $data = $client->ping();
 ```
 
 ## Available methods
