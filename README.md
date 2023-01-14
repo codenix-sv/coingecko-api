@@ -26,11 +26,14 @@ The preferred way to install this extension is through [composer](http://getcomp
 
 Either run
 
-```bash
-$ composer require codenix-sv/coingecko-api
+Add in repositories section
+```json
+{
+    "type": "vcs",
+    "url": "https://github.com/LborV/coingecko-api"
+}
 ```
-or add
-
+And in require section
 ```json
 "codenix-sv/coingecko-api": "^1.0"
 ```
