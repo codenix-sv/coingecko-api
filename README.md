@@ -35,7 +35,7 @@ Add in repositories section
 ```
 And in require section
 ```json
-"codenix-sv/coingecko-api": "^1.0"
+"codenix-sv/coingecko-api": "dev-pro-plan"
 ```
 ## Basic usage
 
