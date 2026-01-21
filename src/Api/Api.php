@@ -32,6 +32,11 @@ class Api
      */
     public function get(string $uri, array $query = []): array
     {
+        $apiKey = $this->client->getApiKey();
+        if(!empty($apiKey)) {
+            $query['x_cg_pro_api_key'] = $apiKey;
+        }
+
         $response = $this->client->getHttpClient()->request('GET', '/api/' . $this->version
             . $uri, ['query' => $query]);
         $this->client->setLastResponse($response);
